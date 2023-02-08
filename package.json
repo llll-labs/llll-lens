@@ -1,0 +1,55 @@
+{
+  "name": "@llll-labs/llll-lens",
+  "version": "0.0.1",
+  "private": false,
+  "type": "module",
+  "main": "./nuxt.config.ts",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "nuxt": "^3.0.0"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.3",
+    "@unocss/nuxt": "^0.49.4",
+    "@urql/vue": "^1.0.4",
+    "@vueuse/core": "^9.6.0",
+    "@vueuse/nuxt": "^9.6.0",
+    "graphql": "^16.6.0",
+    "pinia": "^2.0.23"
+  },
+  "description": "llll layer for Lens Protocol",
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llll-labs/llll-lens.git"
+  },
+  "keywords": [
+    "lens",
+    "nuxt"
+  ],
+  "author": "j0hnfl0w",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/llll-labs/llll-lens/issues"
+  },
+  "homepage": "https://github.com/llll-labs/llll-lens#readme",
+  "graphql": {
+    "schema": "https://api.lens.dev",
+    "extensions": {
+      "languageService": {
+        "cacheSchemaFileForLookup": true
+      }
+    }
+  },
+  "overrides": { 
+    "vue": "latest"
+  }
+}
